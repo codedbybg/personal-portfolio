@@ -7,19 +7,18 @@ import {
     Download,
 } from "lucide-react";
 
+import { useTheme } from "../context/ThemeContext.jsx";
+
 import Button from "./common/Button";
 
 function Navbar(){
     const [isMenuOpen , setIsMenuOpen] = useState(false);
-    const [theme , setTheme] = useState("dark");
+    const { theme, toggleTheme } = useTheme();
 
     const toggleMenu = ()=>{
         setIsMenuOpen((current)=> !current);
     };
 
-    const toggleTheme = ()=>{
-        setTheme((currentTheme)=>currentTheme === "dark" ? "light" : "dark");
-    };
 
     const navLinks = [
         { name : "About" , href : "#about"},
