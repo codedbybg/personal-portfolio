@@ -8,13 +8,15 @@ import Certificates from "./components/certificates/Certificates";
 import Resume from "./components/Resume/Resume";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import CustomCursor from "./components/cursor/CustomCursor";
 
 function App() {
   return (
-    <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)]">
+    <div className="min-h-screen min-w-0 bg-[var(--background)] text-[var(--foreground)]">
+      <CustomCursor/>
       <Navbar />
 
-      <main>
+      <main className="min-w-0">
         <Hero />
         <About />
         <Skills />
@@ -24,6 +26,7 @@ function App() {
         <Resume />
         <Contact />
       </main>
+
       <Footer />
     </div>
   );

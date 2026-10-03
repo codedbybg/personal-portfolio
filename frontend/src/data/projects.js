@@ -1,94 +1,109 @@
 export const projectsData = [
-    {
-        title: "AI Smart Agriculture Assistant",
+  {
+    title: "AI Smart Agriculture Assistant",
 
-        description:
-            "An AI-powered agriculture platform that helps farmers with crop recommendations, soil analysis, fertilizer guidance, irrigation insights and weather information.",
+    description:
+      "An AI-powered agriculture platform that helps farmers with crop recommendations, soil analysis, fertilizer guidance, irrigation insights and weather information.",
 
-        category: "AI / Full Stack",
+    category: "AI / Full Stack",
 
-        technologies: [
-            "React",
-            "Node.js",
-            "Express",
-            "MongoDB",
-            "Python",
-            "FastAPI",
-            "Machine Learning",
-            "Tailwind CSS",
-        ],
+    image: "/projects/ai-smart-agriculture.png",
 
-        github:
-            "https://github.com/codedbybg/AI-Smart-Agriculture-Assistant",
+    technologies: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Python",
+      "FastAPI",
+      "Machine Learning",
+      "Tailwind CSS",
+    ],
 
-        live: "https://ai-smart-agriculture-assistant.netlify.app/",
+    github:
+      "https://github.com/codedbybg/AI-Smart-Agriculture-Assistant",
 
-        featured: true,
-    },
+    live:
+      "https://ai-smart-agriculture-assistant.netlify.app/",
 
-    {
-        title: "Airbnb Clone",
+    featured: true,
+  },
 
-        description:
-            "A full-stack accommodation listing application with listing management, authentication, database integration and server-side rendering.",
+  {
+    title: "Airbnb Clone",
 
-        category: "Full Stack",
+    description:
+      "A full-stack accommodation listing application with listing management, authentication, database integration and server-side rendering.",
 
-        technologies: [
-            "Node.js",
-            "Express",
-            "MongoDB",
-            "EJS",
-            "Bootstrap",
-        ],
+    category: "Full Stack",
 
-        github: "https://github.com/codedbybg/Sigma-Project",
+    image: "/projects/airbnb-clone.png",
 
-        live: "https://sigma-project-codedbybg.netlify.app/listings",
+    technologies: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "EJS",
+      "Bootstrap",
+    ],
 
-        featured: true,
-    },
+    github:
+      "https://github.com/codedbybg/Sigma-Project",
 
-    {
-        title: "Spotify Clone",
+    live:
+      "https://sigma-project-codedbybg.netlify.app/listings",
 
-        description:
-            "A responsive music streaming interface inspired by modern music platforms, focusing on frontend development and responsive UI design.",
+    featured: true,
+  },
 
-        category: "Frontend",
+  {
+    title: "Spotify Clone",
 
-        technologies: [
-            "HTML",
-            "CSS",
-            "JavaScript",
-        ],
+    description:
+      "A responsive music streaming interface inspired by modern music platforms, focusing on frontend development and responsive UI design.",
 
-        github: "https://github.com/codedbybg/Spotify-Clone",
+    category: "Frontend",
 
-        live: "https://codedbybg.github.io/Spotify-Clone/",
+    image: "/projects/spotify-clone.png",
 
-        featured: false,
-    },
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
 
-    {
-        title: "Todo Application",
+    github:
+      "https://github.com/codedbybg/Spotify-Clone",
 
-        description:
-            "A modern task management application built with React, providing a clean interface for creating, managing and organizing tasks.",
+    live:
+      "https://codedbybg.github.io/Spotify-Clone/",
 
-        category: "Frontend",
+    featured: false,
+  },
 
-        technologies: [
-            "React",
-            "Material UI",
-            "Tailwind CSS",
-            "JavaScript",
-        ],
+  {
+    title: "Todo Application",
 
-        github: "https://github.com/codedbybg/ToDo-List",
+    description:
+      "A modern task management application built with React, providing a clean interface for creating, managing and organizing tasks.",
 
-        live: "https://codedbybg.github.io/ToDo-List/",
+    category: "Frontend",
 
-        featured: false,
-    },
+    image: "/projects/todo-application.png",
+
+    technologies: [
+      "React",
+      "Material UI",
+      "Tailwind CSS",
+      "JavaScript",
+    ],
+
+    github:
+      "https://github.com/codedbybg/ToDo-List",
+
+    live:
+      "https://codedbybg.github.io/ToDo-List/",
+
+    featured: false,
+  },
 ];

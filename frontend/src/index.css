@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
+/* ================================
+    Theme Variables
+================================ */
+
 :root {
   --background: #0a0a0a;
   --surface: #111111;
@@ -27,17 +31,60 @@
   --accent: #7c3aed;
 }
 
+/* ================================
+    Global Document
+================================ */
+
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  min-width: 320px;
 }
 
 body {
   margin: 0;
+  width: 100%;
   min-width: 320px;
+  max-width: 100%;
   background: var(--background);
   color: var(--foreground);
   font-family: "Inter", sans-serif;
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
+}
+
+#root {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+}
+
+/* ================================
+    Text Selection
+================================ */
+
+::selection {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+/* ================================
+    Section Navigation
+================================ */
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ================================
+    Keyboard Focus
+================================ */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
 }

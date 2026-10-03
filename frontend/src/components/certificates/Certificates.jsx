@@ -11,7 +11,7 @@ function Certificates() {
   return (
     <section
       id="certificates"
-      className="bg-[var(--background)] py-24 sm:py-28"
+      className="min-w-0 bg-[var(--background)] py-24 sm:py-28"
     >
       <Container>
         <SectionHeading
@@ -20,10 +20,11 @@ function Certificates() {
           description="A collection of certifications and learning achievements from my development journey."
         />
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid min-w-0 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {certificatesData.map((certificate, index) => (
             <motion.div
               key={certificate.title}
+              className="min-w-0"
               initial={{
                 opacity: 0,
                 y: 30,
@@ -41,34 +42,34 @@ function Certificates() {
                 delay: index * 0.08,
               }}
             >
-              <Card className="group flex h-full flex-col">
-                <div className="flex items-start justify-between">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[var(--accent)]/10 text-[var(--accent)]">
+              <Card className="group flex h-full min-w-0 flex-col">
+                <div className="flex min-w-0 flex-wrap items-start justify-between gap-4">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--accent)]/10 text-[var(--accent)]">
                     <Award size={22} />
                   </div>
 
-                  <span className="text-sm text-[var(--muted)]">
+                  <span className="max-w-full shrink-0 text-sm text-[var(--muted)]">
                     {certificate.date}
                   </span>
                 </div>
 
-                <h3 className="mt-6 text-xl font-semibold">
+                <h3 className="mt-6 min-w-0 max-w-full break-words text-xl font-semibold">
                   {certificate.title}
                 </h3>
 
-                <p className="mt-2 text-sm font-medium text-[var(--accent)]">
+                <p className="mt-2 min-w-0 max-w-full break-words text-sm font-medium text-[var(--accent)]">
                   {certificate.issuer}
                 </p>
 
-                <p className="mt-4 flex-1 leading-7 text-[var(--muted)]">
+                <p className="mt-4 min-w-0 max-w-full flex-1 break-words leading-7 text-[var(--muted)]">
                   {certificate.description}
                 </p>
 
-                <div className="mt-6 flex flex-wrap gap-2">
+                <div className="mt-6 flex min-w-0 flex-wrap gap-2">
                   {certificate.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="rounded-full border border-[var(--border)] px-3 py-1.5 text-xs text-[var(--muted)]"
+                      className="max-w-full break-words rounded-full border border-[var(--border)] px-3 py-1.5 text-xs text-[var(--muted)]"
                     >
                       {skill}
                     </span>
@@ -79,12 +80,13 @@ function Certificates() {
                   href={certificate.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="mt-7 inline-flex items-center gap-2 text-sm font-semibold text-[var(--foreground)] transition-colors duration-300 hover:text-[var(--accent)]"
+                  className="mt-7 inline-flex max-w-full shrink-0 items-center gap-2 self-start text-sm font-semibold text-[var(--foreground)] transition-colors duration-300 hover:text-[var(--accent)]"
                 >
-                  View Certificate
+                  <span className="min-w-0">View Certificate</span>
+
                   <ExternalLink
                     size={15}
-                    className="transition-transform duration-300 group-hover:translate-x-0.5"
+                    className="shrink-0 transition-transform duration-300 group-hover:translate-x-0.5"
                   />
                 </a>
               </Card>

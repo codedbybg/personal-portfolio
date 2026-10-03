@@ -9,7 +9,7 @@ import Button from "../common/Button";
 
 function Contact() {
   return (
-    <section id="contact" className="py-24 sm:py-28">
+    <section id="contact" className="min-w-0 py-24 sm:py-28">
       <Container>
         <SectionHeading
           eyebrow="Contact"
@@ -17,15 +17,16 @@ function Contact() {
           description="Have a project idea, opportunity, or just want to connect? Feel free to reach out."
         />
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
+        <div className="mt-12 grid min-w-0 gap-8 lg:grid-cols-2">
           {/* Contact Information */}
           <motion.div
+            className="min-w-0"
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <Card className="h-full">
+            <Card className="h-full min-w-0">
               <h3 className="text-2xl font-bold">Get in touch</h3>
 
               <p className="mt-4 leading-7 text-[var(--muted)]">
@@ -34,20 +35,22 @@ function Contact() {
                 opportunities, collaborations and interesting projects.
               </p>
 
-              <div className="mt-8 space-y-4">
+              <div className="mt-8 min-w-0 space-y-4">
                 {/* Email */}
                 <a
-                  href="mailto:your-email@example.com"
-                  className="flex items-center gap-4 rounded-xl border border-[var(--border)] p-4 transition-all duration-300 hover:border-[var(--accent)]"
+                  href="mailto:bhagwangolhar6629@gmail.com"
+                  className="flex min-w-0 items-center gap-4 rounded-xl border border-[var(--border)] p-4 transition-all duration-300 hover:border-[var(--accent)]"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--surface-elevated)]">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--surface-elevated)]">
                     <Mail size={20} className="text-[var(--accent)]" />
                   </div>
 
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-sm text-[var(--muted)]">Email</p>
 
-                    <p className="font-medium">your-email@example.com</p>
+                    <p className="break-all font-medium">
+                      bhagwangolhar6629@gmail.com
+                    </p>
                   </div>
                 </a>
 
@@ -56,32 +59,36 @@ function Contact() {
                   href="https://github.com/codedbybg"
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-4 rounded-xl border border-[var(--border)] p-4 transition-all duration-300 hover:border-[var(--accent)]"
+                  className="flex min-w-0 items-center gap-4 rounded-xl border border-[var(--border)] p-4 transition-all duration-300 hover:border-[var(--accent)]"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--surface-elevated)]">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--surface-elevated)]">
                     <FaGithub size={20} />
                   </div>
 
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-sm text-[var(--muted)]">GitHub</p>
 
-                    <p className="font-medium">github.com/codedbybg</p>
+                    <p className="break-all font-medium">
+                      github.com/codedbybg
+                    </p>
                   </div>
                 </a>
 
                 {/* LinkedIn */}
                 <a
-                  href="#"
-                  className="flex items-center gap-4 rounded-xl border border-[var(--border)] p-4 transition-all duration-300 hover:border-[var(--accent)]"
+                  href="https://www.linkedin.com/in/bhagwan-golhar-9681b8332/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex min-w-0 items-center gap-4 rounded-xl border border-[var(--border)] p-4 transition-all duration-300 hover:border-[var(--accent)]"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-[var(--surface-elevated)]">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--surface-elevated)]">
                     <FaLinkedinIn size={20} />
                   </div>
 
-                  <div>
+                  <div className="min-w-0">
                     <p className="text-sm text-[var(--muted)]">LinkedIn</p>
 
-                    <p className="font-medium">LinkedIn Profile</p>
+                    <p className="break-all font-medium">LinkedIn Profile</p>
                   </div>
                 </a>
               </div>
@@ -90,15 +97,16 @@ function Contact() {
 
           {/* Contact Form */}
           <motion.div
+            className="min-w-0"
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <Card>
-              <form className="space-y-6">
+            <Card className="min-w-0">
+              <form className="min-w-0 space-y-6">
                 {/* Name */}
-                <div>
+                <div className="min-w-0">
                   <label
                     htmlFor="name"
                     className="mb-2 block text-sm font-medium"
@@ -110,12 +118,12 @@ function Contact() {
                     id="name"
                     type="text"
                     placeholder="Your name"
-                    className="w-full rounded-xl border border-[var(--border)] bg-[var(--surface-elevated)] px-4 py-3 text-[var(--foreground)] outline-none transition-all duration-300 placeholder:text-[var(--muted)] focus:border-[var(--accent)]"
+                    className="block w-full min-w-0 rounded-xl border border-[var(--border)] bg-[var(--surface-elevated)] px-4 py-3 text-[var(--foreground)] outline-none transition-all duration-300 placeholder:text-[var(--muted)] focus:border-[var(--accent)]"
                   />
                 </div>
 
                 {/* Email */}
-                <div>
+                <div className="min-w-0">
                   <label
                     htmlFor="email"
                     className="mb-2 block text-sm font-medium"
@@ -127,12 +135,12 @@ function Contact() {
                     id="email"
                     type="email"
                     placeholder="your@email.com"
-                    className="w-full rounded-xl border border-[var(--border)] bg-[var(--surface-elevated)] px-4 py-3 text-[var(--foreground)] outline-none transition-all duration-300 placeholder:text-[var(--muted)] focus:border-[var(--accent)]"
+                    className="block w-full min-w-0 rounded-xl border border-[var(--border)] bg-[var(--surface-elevated)] px-4 py-3 text-[var(--foreground)] outline-none transition-all duration-300 placeholder:text-[var(--muted)] focus:border-[var(--accent)]"
                   />
                 </div>
 
                 {/* Message */}
-                <div>
+                <div className="min-w-0">
                   <label
                     htmlFor="message"
                     className="mb-2 block text-sm font-medium"
@@ -144,12 +152,12 @@ function Contact() {
                     id="message"
                     rows="6"
                     placeholder="Tell me about your project or opportunity..."
-                    className="w-full resize-none rounded-xl border border-[var(--border)] bg-[var(--surface-elevated)] px-4 py-3 text-[var(--foreground)] outline-none transition-all duration-300 placeholder:text-[var(--muted)] focus:border-[var(--accent)]"
+                    className="block w-full min-w-0 resize-none rounded-xl border border-[var(--border)] bg-[var(--surface-elevated)] px-4 py-3 text-[var(--foreground)] outline-none transition-all duration-300 placeholder:text-[var(--muted)] focus:border-[var(--accent)]"
                   />
                 </div>
 
                 <Button type="submit" className="w-full">
-                  <Send size={16} className="mr-2" />
+                  <Send size={16} className="mr-2 shrink-0" />
                   Send Message
                 </Button>
               </form>
