@@ -52,14 +52,25 @@ function Hero() {
 
                         {/* CTA */}
                         <div className="mt-8 flex flex-wrap gap-4">
-                            <Button>
-                                View Projects
-                                <ArrowRight size={17} className="ml-2" />
-                            </Button>
+                            <a
+                                href="#projects"
+                                className="inline-flex"
+                            >
+                                <Button>
+                                    view projects
+                                    <ArrowRight size={17} className="ml-2" />
+                                </Button>
+                            </a>
 
-                            <Button variant="secondary">
-                                Download Resume
-                            </Button>
+                            <a
+                                href="/resume.pdf"
+                                download
+                                className="inline-flex"
+                            >
+                                <Button variant="secondary">
+                                    Download Resume
+                                </Button>
+                            </a>
                         </div>
 
                         {/* Social Links */}
@@ -67,7 +78,8 @@ function Hero() {
 
                         {/* GitHub */}
                             <a
-                                href="#"
+                                href="https://github.com/codedbybg"
+                                target="_blank"
                                 aria-label="GitHub"
                                 className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] text-[var(--muted)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent)] hover:text-[var(--accent)]"
                             >
@@ -76,7 +88,8 @@ function Hero() {
 
                             {/* LinkedIn */}
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/bhagwan-golhar-9681b8332/"
+                                target="_blank"
                                 aria-label="LinkedIn"
                                 className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] text-[var(--muted)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent)] hover:text-[var(--accent)]"
                             >
@@ -85,7 +98,7 @@ function Hero() {
 
                             {/* Email */}
                             <a
-                                href="mailto:your-email@example.com"
+                                href="mailto:bhagwangolhar6629@gmail.com"
                                 aria-label="Email"
                                 className="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] text-[var(--muted)] transition-all duration-300 hover:-translate-y-1 hover:border-[var(--accent)] hover:text-[var(--accent)]"
                             >
