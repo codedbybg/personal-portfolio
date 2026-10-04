@@ -31,7 +31,7 @@ function Navbar() {
             href="#home"
             className="shrink-0 text-xl font-bold tracking-tight"
           >
-            BG<span className="text-[var(--accent)]">.</span>
+            CODEDBYBG<span className="text-[var(--accent)]">.</span>
           </a>
 
           {/* Desktop Navigation */}
