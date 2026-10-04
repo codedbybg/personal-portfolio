@@ -16,7 +16,7 @@ function Footer() {
               href="#home"
               className="text-xl font-bold"
             >
-              BG<span className="text-[var(--accent)]">.</span>
+              CODEDBYBG<span className="text-[var(--accent)]">.</span>
             </a>
 
             <p className="mt-2 max-w-full text-sm text-[var(--muted)]">
