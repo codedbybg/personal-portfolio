@@ -138,7 +138,7 @@ function Hero() {
 
                 {/* Image */}
                 <img
-                  src="/profile/bhagwan-profile.png"
+                  src="/profile/bhagwan-profile2.png"
                   alt="Bhagwan Golhar - Full Stack Developer"
                   className="h-full w-full object-cover object-center transition-transform duration-700 hover:scale-105"
                 />
