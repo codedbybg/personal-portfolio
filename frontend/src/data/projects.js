@@ -56,30 +56,25 @@ export const projectsData = [
     featured: true,
   },
 
-  {
-    title: "Spotify Clone",
-
-    description:
-      "A responsive music streaming interface inspired by modern music platforms, focusing on frontend development and responsive UI design.",
-
-    category: "Frontend",
-
-    image: "/projects/spotify-clone.png",
-
-    technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-    ],
-
-    github:
-      "https://github.com/codedbybg/Spotify-Clone",
-
-    live:
-      "https://codedbybg.github.io/Spotify-Clone/",
-
-    featured: false,
-  },
+{
+  title: "Job-Tracker",
+  description:
+    "A full-stack job tracking platform built to manage job applications and recruitment workflows, featuring JWT authentication, role-based access for candidates and recruiters, job listings, and application management.",
+  category: "Full Stack",
+  image: "/projects/job-tracker.png",
+  technologies: [
+    "React",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "JWT",
+    "REST API",
+    "Tailwind CSS",
+  ],
+  github: "https://github.com/codedbybg/job-tracker",
+  live: "https://bg-job-track.netlify.app/",
+  featured: true,
+},
 
   {
     title: "Todo Application",
